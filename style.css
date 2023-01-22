@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(300, 4%, 17%);
+  color: white;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 48px;
+
+  font-family: "Inter";
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 125px;
+
+  position: fixed;
+  width: 100%;
+}
+
+button {
+  padding: 16px 24px;
+  border-radius: 8px;
+  border: 1px solid #8b5cf6;
+  background-color: transparent;
+  color: white;
+
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+form {
+  display: flex;
+
+  padding: 182px 0 48px  48px;
+  width: fit-content;
+}
+
+.habits {
+  margin-top: 50px;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 23px;
+}
+
+.habit {
+  width: 64px;
+  height: 64px;
+
+  display: flex;
+
+  font-size: 32px;
+  justify-content: center;
+}
+
+.days {
+  display: flex;
+  margin-left: 32px;
+  gap: 48px;
+}
+
+.day {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.day div {
+  margin-bottom: 7px;
+  font-family: "Roboto mono";
+  font-size: 125%;
+
+  text-align: center;
+
+  color: #a1a1aa;
+}
+
+input {
+  appearance: none;
+  -webkit-appearance: none;
+
+  width: 64px;
+  height: 64px;
+
+  border: 5px solid #27272a;
+  border-radius: 8px;
+
+  background-color: #27272a;
+}
+/* pseudo-selector(todos com 2 pontinhos)*/
+
+input:checked {
+  background-color: #8b5cf6;
+  border: 2px solid #a78bfa;
+}
+
+@media(max-width: 570px) {
+  button div{ 
+    display: none;
+  }
+}
